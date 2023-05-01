@@ -1,0 +1,206 @@
+/*======================
+   01. font import
+========================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*======================
+   02. Basic css
+========================*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    line-height: 22px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+    outline: 0;
+}
+
+
+
+
+.section-wrapper {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #46178f;
+    z-index: -11;
+}
+
+.shape-one, .shape-two {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.1;
+    min-width: 75vmin;
+    min-height: 75vmin;
+    z-index: -1;
+}
+
+.shape-one {
+    transform: rotate(45deg);
+    top: -15vmin;
+    left: -15vmin;
+}
+
+.shape-two {
+    border-radius: 50%;
+    bottom: -15vmin;
+    right: -15vmin;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+    color: #ffffff;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.section-box {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+    width: 320px;
+    margin: 30px auto 0 auto;
+}
+
+.section-box input {
+    width: 100%;
+    height: 48px;
+    color: rgb(51, 51, 51);
+    border: 2px solid #B2B2B2;
+    border-radius: 4px;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+}
+
+.section-box input::placeholder {
+    color: #B2B2B2;
+}
+
+.section-box input::focus {
+    border: 2px solid rgb(51, 51, 51);
+}
+
+.submit-btn {
+    height: 48px;
+    padding-bottom: 2px;
+    background-color: #2f2f2f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -2px inset; 
+    border: transparent;
+    width: 100%;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+
+.submit-btn:hover {
+    margin-top: 12px;
+    height: 46px;
+}
+
+.footer-box {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-box p {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-box p a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-box p a:hover {
+    text-decoration: underline;
+}
+
+.footer-box ul li {
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-box ul li a {
+    color: #ffffff;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
